@@ -14,41 +14,24 @@ El triángulo Cristicida:
 -Religión de cualquier tipo, satánica, islámica, cristiana.
 -Votación, basada en los intereses del pueblo.
 */
+
 document.addEventListener("mousedown",(e)=>{
-    if(e.button==1){
-        let page = prompt("Introduce tu emoji por letras.")
-        if(page=="refrescar"){
+    if(e.button==1&&location.href.includes("chatovod")){
+        let page = prompt("Introduce tu emoji por letras: Hay 'nerdo', 'computadora' y 'bomba'...")
+        if(page=="refrescar"||page=="actualizar"){
             location.reload()
         }
         if(page=="borrar"){
             document.getElementsByTagName("textarea")[0].innerHTML=""
         }
         if(page=="nerdo"){
-            document.getElementsByTagName("textarea")[0].innerHTML="[size=30]🤓[/size]"
+            document.getElementsByTagName("textarea")[0].innerHTML="[img]https://st1.chatovod.com/widget/i/sm/1/geek.png[/img]"
         }
-        if(page=="maquinista"){
-            document.getElementsByTagName("textarea")[0].innerHTML="[size=30]🥸[/size]"
+        if(page=="computadora"){
+            document.getElementsByTagName("textarea")[0].innerHTML="[img]https://st1.chatovod.com/widget/i/sm/1/computer.png[/img]"
         }
-        if(page=="risas fuertes"){
-            document.getElementsByTagName("textarea")[0].innerHTML="[size=30]🤣[/size]"
-        }
-        if(page=="risas"){
-            document.getElementsByTagName("textarea")[0].innerHTML="[size=30]😂[/size]"
-        }
-        if(page=="chulo"){
-            document.getElementsByTagName("textarea")[0].innerHTML="[size=30]😎[/size]"
-        }
-        if(page=="llorando"){
-            document.getElementsByTagName("textarea")[0].innerHTML="[size=30]😭[/size]"
-        }
-        if(page=="calavera"){
-            document.getElementsByTagName("textarea")[0].innerHTML="[size=30]☠️[/size]"
-        }
-        if(page=="bandera pirata"){
-            document.getElementsByTagName("textarea")[0].innerHTML="[size=30]🏴‍☠️[/size]"
-        }
-        if(page=="pensando"){
-            document.getElementsByTagName("textarea")[0].innerHTML="[size=30]🤔[/size]"
+        if(page=="bomba"){
+            document.getElementsByTagName("textarea")[0].innerHTML="[img]https://st1.chatovod.com/widget/i/sm/1/bomb.png[/img]"
         }
     }
 })
