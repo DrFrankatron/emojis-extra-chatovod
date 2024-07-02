@@ -33,5 +33,9 @@ document.addEventListener("mousedown",(e)=>{
         if(page=="bomba"){
             document.getElementsByTagName("textarea")[0].innerHTML="[img]https://st1.chatovod.com/widget/i/sm/1/bomb.png[/img]"
         }
+        if(page=="definicion"){
+            let word1 = prompt("Introduce tu concepto para extraer su definición.")
+            location.replace("https://api.dictionaryapi.dev/api/v2/entries/en/"+word1)
+        }
     }
 })
